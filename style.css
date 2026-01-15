@@ -10,6 +10,7 @@
   box-sizing: border-box;
 }
 /* common styles  */
+
 .btn-primary {
   background-color: #ff900e;
   color: #ffffff;
@@ -17,6 +18,7 @@
   font-size: 1.25rem;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 .flex {
   display: flex;
@@ -48,6 +50,7 @@
   justify-content: space-between;
   margin-bottom: 50px;
   padding-top: 50px;
+  align-items: center;
 }
 .menu-items {
   list-style: none;
@@ -58,6 +61,7 @@
 }
 .menu-items a {
   text-decoration: none;
+  color: rgba(66, 66, 66, 1);
 }
 /* banner info  */
 .banner-info {
@@ -80,8 +84,460 @@
 .banner-img {
   padding-bottom: 45px;
 }
+.banner-img img {
+  width: 100%;
+  height: auto;
+}
+/* feauters-container  */
+.feauters-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 40px;
+  align-items: center;
+}
+.teams-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.teams-img img {
+  width: 100%;
+  height: auto;
+}
+.teams-info {
+  max-width: 530px;
+}
+.teams-info h2,
+.teams-info p {
+  margin-bottom: 20px;
+}
+.quick {
+  font-size: 45px;
+  font-weight: 500;
+  color: rgba(114, 114, 114, 1);
+}
+.our {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgba(19, 19, 19, 1);
+}
+.feetu {
+  font-size: 45px;
+  font-weight: 700;
+  color: #ff900e;
+}
+/* about-info  */
+.about-info {
+  gap: 150px;
+  align-items: center;
+  margin-bottom: 130px;
+}
+.about-img-container {
+  width: 100%;
+}
+.about-img-container img {
+  width: 100%;
+  height: auto;
+}
+.about-card-container {
+  width: 100%;
+}
+.about-card-container h3 {
+  margin: 30px 0;
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.about-card-container p {
+  margin-bottom: 20px;
+}
 
+.card {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 550px;
+}
+.card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#experince-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -130px;
+  background-color: #ff900e;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+#experince-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.about-img-container button {
+  padding: 20px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* facts  */
+.facts-info {
+  margin-top: 130px;
+}
+.facts-info h3 {
+  margin-bottom: 24px;
+}
+.facts-info p {
+  margin-bottom: 75px;
+}
+
+.second-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-bottom: 100px;
+  padding: 0 50px;
+}
+.card2 {
+  border: 2px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.card2:hover {
+  transform: translateY(-5px);
+}
+.card2 img {
+  margin-top: 30px;
+}
+.card2 h5 {
+  color: rgba(66, 66, 66, 1);
+  margin-top: 15px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.card2 p {
+  font-weight: 600;
+  margin-top: 15px;
+  color: rgba(114, 114, 114, 1);
+}
+
+/* footer  */
+.sponsor-title-container {
+  text-align: center;
+  margin-top: 100px;
+}
+.sponsor-title-container h3 {
+  margin-bottom: 20px;
+}
+.sponsor-title-container p {
+  margin-bottom: 50px;
+}
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 100px;
+}
+.icon-container img {
+  filter: grayscale(100%);
+  max-width: 150px;
+  height: auto;
+}
+.main-footer {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  text-align: center;
+  background-color: rgba(255, 144, 14, 0.1);
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+}
 /* responsiveness  */
 /* small device  */
+@media screen and (max-width: 576px) {
+  body > section {
+    padding: 0 20px;
+  }
+  .middle {
+    padding: 0 20px;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  .menu-items {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .menu-items li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .menu-items li:last-child {
+    margin-bottom: 0;
+  }
+  .banner-info {
+    margin: 30px auto;
+  }
+
+  .banner-info h1 {
+    font-size: 2rem;
+  }
+  .banner-info p {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .banner-info button {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+  .banner-img {
+    padding-bottom: 20px;
+  }
+  .feauters-container {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+  }
+  .teams-img {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .teams-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .quick,
+  .our,
+  .feetu {
+    font-size: 28px;
+  }
+
+  .teams-info h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .teams-info p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .teams-info button {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+  .about-info {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  .about-card-container h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .about-card-container p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .card {
+    max-width: 100%;
+    padding: 20px;
+  }
+  #experince-badge {
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 30px 20px;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  #experince-year {
+    font-size: 2.5rem;
+  }
+  .about-img-container button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+  }
+  .facts-info {
+    margin-top: 50px;
+  }
+  .facts-info h3 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .facts-info p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .second-card-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+  .card2 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .sponsor-title-container {
+    margin-top: 50px;
+  }
+  .sponsor-title-container h3 {
+    font-size: 28px;
+  }
+  .sponsor-title-container p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .icon-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+  .icon-container img {
+    max-width: 100px;
+  }
+  .main-footer {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 20px 10px;
+  }
+  .main-footer p {
+    font-size: 12px;
+  }
+}
 
 /* tablet device  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  body > section {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .middle {
+    padding: 0 30px;
+  }
+
+  /* Navbar */
+  #navbar {
+    padding-top: 40px;
+  }
+
+  /* Banner */
+  .banner-info h1 {
+    font-size: 3rem;
+  }
+
+  .banner-info p {
+    padding: 0 20px;
+  }
+
+  /* Features */
+  .feauters-container {
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .teams-img {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .teams-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .quick,
+  .our,
+  .feetu {
+    font-size: 36px;
+  }
+
+  /* About Section */
+  .about-info {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .about-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    max-width: 100%;
+  }
+
+  #experince-badge {
+    margin-left: 0;
+    margin-top: 20px;
+    width: auto;
+    max-width: 400px;
+    padding: 45px 42px;
+  }
+
+  /* Facts */
+  .facts-info {
+    margin-top: 80px;
+  }
+
+  .second-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .card2 {
+    margin: 0 auto;
+  }
+
+  /* Sponsors */
+  .icon-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+  }
+  .main-footer {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1800px) {
+  .middle {
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+
+  .about-info {
+    gap: 100px;
+  }
+
+  #experince-badge {
+    margin-left: -80px;
+    margin-top: -100px;
+  }
+
+  .second-card-container {
+    padding: 0 20px;
+  }
+}
